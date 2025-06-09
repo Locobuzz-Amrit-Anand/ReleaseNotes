@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Release Notes – Latest</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="archive.html" class="nav-link">Archive</a>
+    </nav>
+    <h1>🚀 Latest Release Notes</h1>
+    <p>
+      Catch up on what’s new this week. For older updates, visit the
+      <a href="archive.html">Archive</a>.
+    </p>
+  </header>
+
+  <main class="content">
+    <div class="iframe-container">
+      <iframe
+        src="releases/01-06-25.html"
+        loading="lazy"
+        title="Latest Release Notes"
+        id="release-iframe"
+        scrolling="no"
+      ></iframe>
+    </div>
+  </main>
+
+  <script>
+    const iframe = document.getElementById('release-iframe');
+
+    function resizeIframe() {
+      try {
+        const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+        iframe.style.height = iframeDocument.body.scrollHeight + 'px';
+      } catch (e) {
+        console.warn('Cannot access iframe content to resize:', e);
+      }
+    }
+
+    iframe.addEventListener('load', () => {
+      resizeIframe();
+    });
+
+    window.addEventListener('resize', () => {
+      resizeIframe();
+    });
+  </script>
+</body>
+</html>
