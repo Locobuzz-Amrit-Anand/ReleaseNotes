@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Release Notes – June 2025</title>
+  <link rel="stylesheet" href="../css/releases/01-06-25.css">
+</head>
+<body>
+
+  <h1 style="margin-left: 10px;">🚀 Release Notes – June 2025 – Week 2</h1>
+  <p  style="margin-left: 10px;">Explore the latest updates across personalization in workflow Replies.</p>
+
+ 
+  <!-- ... -->
+    <!-- <div class="section">
+    <h2>⚙️ Location & Ticket-Based Personalizers in Workflow Replies</h2>
+    <p>Control where tickets can be sent or forwarded using a centralized whitelist.</p>
+
+    <h3>🔐 Admin Controls:</h3>
+    <ul>
+      <li>Manage domains and individual emails via intuitive UI.</li>
+      <li>Enable or disable the whitelist globally at any time.</li>
+    </ul>
+
+    <h3>✉️ Agent Experience:</h3>
+    <ul>
+      <li>Real-time validation ensures forwarding is restricted to approved addresses.</li>
+      <li>Enhances control and reduces data leakage risks.</li>
+    </ul>
+
+    📽️ <a class="video-link" href="https://www.youtube.com/watch?v=Xs3gaEIQjF0" target="_blank">Watch Email Whitelisting Demo</a>
+  </div> -->
+
+  <div class="section">
+  <h2>⚙️ Location & Ticket-Based Personalizers in Workflow Replies</h2>
+  <p>
+    We’ve enhanced the Workflow Reply Action feature to support dynamic personalizers from both location profiles and ticket-related data.
+    This allows your workflow replies to be more context-aware and personalized — saving time and improving communication quality.
+  </p>
+
+  <h3>🆕 What’s New</h3>
+
+  <h4>🔹 Location-Based Personalizers</h4>
+  <p>Insert attributes from the associated location profile directly into your messages.</p>
+  <ul>
+    <li><code>{{location.name}}</code></li>
+    <li><code>{{location.address}}</code></li>
+    <li><code>{{location.phone}}</code></li>
+    <li><code>{{location.business_hours}}</code></li>
+    <li>✅ Custom location fields are also supported.</li>
+  </ul>
+
+  <h4>🔸 Ticket-Based Personalizers</h4>
+  <p>You can now personalize replies using ticket-specific details as well.</p>
+  <ul>
+    <li><code>{{ticket.id}}</code></li>
+    <li><code>{{ticket.customer_name}}</code></li>
+    <li><code>{{ticket.category}}</code></li>
+    <li><code>{{ticket.priority}}</code></li>
+    <li><code>{{ticket.created_date}}</code></li>
+    <li><code>{{ticket.status}}</code></li>
+    <li><code>{{ticket.assigned_agent}}</code></li>
+    <li>✅ Custom ticket fields are also supported.</li>
+  </ul>
+
+  <h3>✅ Why It Matters</h3>
+  <ul>
+    <li>📍 Location-specific contact info and hours</li>
+    <li>🎫 Ticket context such as customer name, issue category, and priority</li>
+    <li>🤝 More tailored communication based on where and why the customer reached out</li>
+  </ul>
+  <p>This is especially valuable for businesses operating at scale across different branches and support teams.</p>
+
+  <h3>💬 Example Usage</h3>
+  <pre>
+Hi {Full Name},  
+Thanks for reaching out to {{location.name}}.  
+We’ve received your ticket (#{{ticket.id}}) regarding {{ticket.category}}.  
+You can visit us at {{location.address}} or call us at {{location.phone}}.  
+We'll get back to you shortly.
+  </pre>
+
+  <p>
+    Start using personalizers in your workflows today to deliver intelligent, dynamic responses to every customer —
+    no matter where they are or what issue they’re facing.
+  </p>
+</div>
+
+
+  
+
+  <div class="section">
+    <h2>📌 Need Help?</h2>
+    <p> Reach out to your Customer Success Manager for assistance.</p>
+  </div>
+</body>
+</html>
